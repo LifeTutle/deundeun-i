@@ -30,7 +30,7 @@
 2024년 기준 국가데이터처가 수집한 가구 특성별 자산 현황에 따르면 60대 이상 가구의 자산 규모는 평균 5억 8천만원대로 전 연령대 중 두 번째로 높다.
 
 <p align="center">
-  <img src=".assets/슬라이드4.png" width="700"><br>
+  <br><img src=".assets/슬라이드4.png" width="700"><br>
 </p>
 반면에 2024년 금융감독원이 실시한 전 국민 금융 이해도 조사 결과에 따르면 60대 이상의 금융 이해도는 다른 연령대에 비해 낮은 편이다.<br>많은 자산을 가지고 있지만 금융 이해도와 금융 범죄 인지가 낮다는 점을 노려 금융 범죄의 표적이 되고 있다.
 
@@ -82,7 +82,9 @@ OpenAI API와 RAG 기술을 활용하여 자산관리 전략을 제공하고, �
 
 ## 🛠️ 적용기술
 
-![alt text](.assets/슬라이드5.png)
+<p align="center">
+  <img src=".assets/슬라이드5.png"><br>
+</p>
 
 SpringBoot를 기준으로 전체적인 서비스를 제공한다.<br>MySQL에 자산 지키기 서비스를 통해 얻은 사용자 자산 정보를 저장하여 맞춤형 자산 전략과 금융 범죄 패턴 제공 시 참조한다.<br>금융 범죄 패턴과 Open AI API를 결합한 RAG를 통해 금융 범죄 시나리오를 생성한다.<br>이는 Airflow를 통해 주기적으로 진행하여 최신 패턴에 대한 시나리오를 업데이트한다.<br>사용자는 LangChain을 통해 구현된 AI 챗봇을 통해 시뮬레이션 서비스를 제공받는다.<br>이후 결과를 분석하고 MySQL에 저장된 주의 사항과 용어를 참조하여 리포트를 생성하여 사용자에게 제공한다.
 
@@ -90,7 +92,9 @@ SpringBoot를 기준으로 전체적인 서비스를 제공한다.<br>MySQL에 �
 
 ## 🪧 서비스 방법
 
-![alt text](.assets/슬라이드6.png)
+<p align="center">
+  <img src=".assets/슬라이드6.png"><br>
+</p>
 
 로그인 이후에 사용자의 자산 정보 및 생활 정보를 입력한다. 입력받는 자산을 기준으로 AI 자산 진단 결과를 제공하고 본격적인 자산 관리 계획을 생성한다.<br>
 이 과정에서 자연스럽게 사용자의 자산 및 생활 기반의 금융 범죄 시나리오를 발생시킨다. 문자메시지 피싱, 보이스 피싱과 같은 상황을 제공하고 사용자의 대응 행동을 기록한다.  <br>상황이 종료된 후 사용자의 대응에 따른 결과를 저장한다.<br><br>
@@ -100,12 +104,14 @@ SpringBoot를 기준으로 전체적인 서비스를 제공한다.<br>MySQL에 �
 <br>
 
 ## 🖥️ 주요기능 & 서비스 UX/UI
-![alt text](.assets/2.png)
-![alt text](.assets/3.png)
-![alt text](.assets/4.png)
-![alt text](.assets/5.png)
-![alt text](.assets/6.png)
-![alt text](.assets/7.png)
+<p align="center">
+  <img src=".assets/2.png">
+  <img src=".assets/3.png">
+  <img src=".assets/4.png">
+  <img src=".assets/5.png">
+  <img src=".assets/6.png">
+  <img src=".assets/7.png">
+</p>
 
 ### 🧮 대응 점수 산출 및 위험 요소 분석 방법
 
